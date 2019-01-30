@@ -11,7 +11,7 @@ p_line = 0.2 # probability of having a line in one image
 line_pop = np.random.uniform(size=n_img)<p_line # labels of lines
 img = np.random.normal(size=n_img*64*256).reshape(n_img, 32, 512)
 
-label = []
+labels = []
 for i in range(n_img):
     
     if line_pop[i]:
